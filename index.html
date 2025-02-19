@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+    <title>SEOTube - Competitor Video Analysis</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/static/css/main.css" />
+
+    <!-- Main JS Bundle -->
+    <script defer src="%PUBLIC_URL%/static/js/main.js"></script>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Qere is a powerful competitor video analysis tool that provides insights into top keywords, TF-IDF scores, sentiment scores, and suggested video titles and tags to help creators optimize their YouTube content." />
+    <meta name="keywords" content="Qere, YouTube SEO, keyword analysis, TF-IDF, video optimization, video keywords, competitor analysis, YouTube analytics, suggested video tags" />
+    <meta name="author" content="SEOTube" />
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!-- Fix for GitHub Pages Refresh Issue -->
+    <script type="text/javascript">
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+  </body>
+</html>
